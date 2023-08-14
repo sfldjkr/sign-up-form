@@ -1,0 +1,143 @@
+body {
+    background-image: url('https://images.pexels.com/photos/997443/pexels-photo-997443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 100vh;
+    padding:0px;
+    margin:0px;  
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.form-container {
+    background-color: rgba(173, 216, 230,0.2);
+    width: 40%;
+
+    margin: 70px auto 0px;
+    padding: 10px 100px 50px;
+    border-radius: 15px;
+
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-position: center;
+    }
+
+    .form-container {
+        width:85%;
+    }
+    .heading {
+        font-size:medium;
+    }
+
+    .form-container {
+        padding: 5px 50px 25px;
+    }
+
+}
+
+input {
+    display: block;
+    width: 100%;
+    letter-spacing: 2px;
+    -webkit-appearance: none;
+}
+
+textarea, input { 
+    outline: none;
+
+}
+
+.buttondiv {
+    text-align: center;
+    margin: 20px auto 0px;
+}
+
+label {
+    margin: 0px;
+    color:rgb(231, 234, 246,0.7);
+    font-size: smaller;
+    letter-spacing: 2px;
+}
+
+.heading {
+    text-align: center;
+    color: rgba(231, 234, 246,0.8);
+    font-weight: bold;
+    margin: 10px 0px 25px;
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: rgba(162, 168, 211,0.4);
+    letter-spacing: 4px;
+}
+
+input {
+    border:none;
+    background: none;
+    color:rgba(255, 181, 181, 0.4);
+    border-bottom: 3px solid rgba(231, 234, 246,0.6);
+    letter-spacing: 4px;
+
+}
+
+input:focus {
+    transform: scale(1.05);
+    margin: 0px 0px 15px;
+    width: 100%;
+    color:rgba(255, 181, 181, 1);
+}
+
+@keyframes red-light {
+    0%   {border-color:rgba(136, 136, 136, 0.3);}
+    25%  {border-color:rgba(158, 84, 84, 0.3);}
+    35%  {border-color:rgba(131, 52, 52, 0.4);}
+    50%  {border-color:rgba(141, 44, 49, 0.4);}
+    60%  {border-color:rgba(155, 37, 42, 0.4);}
+    75%  {border-color:rgba(163, 27, 27,0.4)}
+    100% {border-color:rgba(177, 26, 26, 0.5);}
+}
+
+input:invalid {
+    animation-name: red-light;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode:forwards;
+
+
+}
+
+h4 {
+    text-align: center;
+    color:rgb(231, 234, 246);
+    font-weight: bold;
+}
+
+@keyframes green-light {
+    0%   {border-color:rgba(144, 151, 144,0.6); }
+    25%  {border-color:rgba(100, 133, 100,0.6);}
+    35%  {border-color:rgba(75, 129, 75,0.6);}
+    50%  {border-color:rgba(64, 139, 64,0.6);}
+    60%  {border-color:rgba(54, 148, 54,0.6);}
+    75%  {border-color:rgba(31, 131, 31,0.6)}
+    100% {border-color:rgba(6, 160, 6,0.6);}
+}
+
+input:valid {
+    animation-name: green-light;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode:forwards;
+}
+
+form:valid {
+    color:green
+}
