@@ -106,7 +106,7 @@ input:focus {
     100% {border-color:rgba(177, 26, 26, 0.5);}
 }
 
-input:invalid {
+.inputs:invalid {
     animation-name: red-light;
     animation-delay: 1s;
     animation-duration: 7s;
@@ -131,13 +131,24 @@ h4 {
     100% {border-color:rgba(6, 160, 6,0.6);}
 }
 
-input:valid {
+.inputs:valid {
     animation-name: green-light;
     animation-delay: 1s;
     animation-duration: 7s;
     animation-fill-mode:forwards;
 }
 
-form:valid {
-    color:green
+.passwordInvalid {
+    animation-name: red-light;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode:forwards;
+
+}
+
+.passwordValid {
+    animation-name: green-light;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode:forwards;
 }
